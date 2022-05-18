@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="bexcloud" description="BEXCLOUD S.A.C.">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="mrojas">
+      <firstName>Mauricio</firstName>
+      <lastName>Rojas</lastName>
+      <personalData/>
+      <professionalData>
+        <email>mrojas@basisexperts.biz</email>
+      </professionalData>
+      <password encrypted="false">Inicio01$</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="GERENTE_OPERACIONES">
+      <displayName>Gerente de Operaciones</displayName>
+    </role>
+    <role name="LIDER_SOPORTE">
+      <displayName>Lider de Soporte</displayName>
+    </role>
+    <role name="DISPATCHER">
+      <displayName>Dispatcher</displayName>
+    </role>
+    <role name="SOPORTE_BASIS">
+      <displayName>Soporte Basis</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="BEX">
+      <displayName>BEX</displayName>
+    </group>
+    <group name="BEXCLOUD">
+      <displayName>BEXCLOUD</displayName>
+    </group>
+    <group name="OPERACIONES" parentPath="/BEX">
+      <displayName>Gerencia de Operaciones</displayName>
+    </group>
+    <group name="SOPORTE" parentPath="/BEX/OPERACIONES">
+      <displayName>Area de Soporte</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>mrojas</userName>
+      <roleName>GERENTE_OPERACIONES</roleName>
+      <groupName>BEX</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
